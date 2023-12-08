@@ -6,7 +6,7 @@ import logo from '../../assets/logo.png'
 const Navbar = () => {
   return (
     <>
-      <div className="p-5 h-15  flex justify-between bg-[#FEC107] items-center">
+      <div className="flex shadow-sm z-30 top-0 sticky justify-between bg-[#FEC107] items-center">
         <img src={logo} className="w-[25em]" alt="logo" />
 
         <form>
