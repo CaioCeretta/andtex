@@ -1,7 +1,13 @@
-export interface CategoriesProps {
-	products: any[]
-}
+import useCategories from '@/data/hooks/useCategories'
 
-export default function Categories(props: CategoriesProps) {
-	return <div>{props.products}</div>
+export default function Categories() {
+	const { categories } = useCategories()
+
+	return (
+		<div>
+			{categories.map((category) => {
+				return <p>{category.name}</p>
+			})}
+		</div>
+	)
 }

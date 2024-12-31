@@ -1,5 +1,5 @@
 {
-  "categorias": [
+  "categories": [
     {
       "id": 1,
       "name": "fios"
@@ -13,7 +13,7 @@
       "name": "fitas"
     }
   ],
-  "produtos": [
+  "products": [
     {
       "id": 1,
       "name": "fio-1",
@@ -58,7 +58,7 @@
       "id": 5,
       "name": "Tecido de fibra de aramida cardado",
       "categoryId": 2,
-      "description": " <h2>Características:</h2> <ul> <li>Material isento de poliéster / algodão</li> <li>Isento de tratamento antichama, podendo ser lavado ou molhado sem prejuízo técnico</li> <li>Excelentes propriedades de isolação térmica</li> <li>Alta resistência à ruptura</li> <li>Alta resistência ao corte</li> <li>Resistência à chama direta e a respingos de solda</li> <li>Alta resistência à abrasão</li> <li>Excelente maleabilidade</li> <li>Compatível com silicones, colas diversas e tintas isolantes</li> </ul> <h2>Aplicações:</h2> <ul> <li>Equipamentos de proteção individual</li> <li>Cabines e cortinas para solda</li> <li>Juntas de expansão</li> <li>Isolamento para pisos e salas de forno</li> </ul> <h2>Especificações:</h2> <table class=\"border border-zinc-600\"> <thead> <tr> <th>Espessura</th> <th>Gramatura</th> <th>Resistência à ruptura</th> <th>Largura</th> <th>Construção</th> </tr> </thead> <tbody> <tr> <td>1.4mm</td> <td>0.650g/m²</td> <td>200.78kg</td> <td>1.2m</td> <td>Tela</td> </tr> <tr> <td>1.7mm</td> <td>0.700g/m²</td> <td>200.78kg</td> <td>1.2m</td> <td>Tela</td> </tr> </tbody> </table>",
+      "description": "<h2>Características:</h2> <ul> <li>Material isento de poliéster / algodão</li> <li>Isento de tratamento antichama, podendo ser lavado ou molhado sem prejuízo técnico</li> <li>Excelentes propriedades de isolação térmica</li> <li>Alta resistência à ruptura</li> <li>Alta resistência ao corte</li> <li>Resistência à chama direta e a respingos de solda</li> <li>Alta resistência à abrasão</li> <li>Excelente maleabilidade</li> <li>Compatível com silicones, colas diversas e tintas isolantes</li> </ul> <h2>Aplicações:</h2> <ul> <li>Equipamentos de proteção individual</li> <li>Cabines e cortinas para solda</li> <li>Juntas de expansão</li> <li>Isolamento para pisos e salas de forno</li> </ul> <h2>Especificações:</h2> <table class=\"border border-zinc-600\"> <thead> <tr> <th>Espessura</th> <th>Gramatura</th> <th>Resistência à ruptura</th> <th>Largura</th> <th>Construção</th> </tr> </thead> <tbody> <tr> <td>1.4mm</td> <td>0.650g/m²</td> <td>200.78kg</td> <td>1.2m</td> <td>Tela</td> </tr> <tr> <td>1.7mm</td> <td>0.700g/m²</td> <td>200.78kg</td> <td>1.2m</td> <td>Tela</td> </tr> </tbody> </table>",
       "images": [
         "https://processoindustrial.com.br/wp-content/uploads/2020/11/tecidos-filtrantes-01.jpg",
         "https://processoindustrial.com.br/wp-content/uploads/2020/11/tecidos-filtrantes-02-600x600.jpg"

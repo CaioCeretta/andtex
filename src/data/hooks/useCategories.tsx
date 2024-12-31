@@ -1,6 +1,16 @@
 import { useContext } from 'react'
-import { CategoriasContext } from '../contexts/Produtos'
+import { CategoriesContext } from '../contexts/CategoriesContext'
 
-const useCategorias = useContext(CategoriasContext)
+const useCategories = () => {
+	const context = useContext(CategoriesContext)
 
-export default useCategorias
+	if (!context) {
+		throw new Error(
+			'useCategories must be used within a CategoriesProvider'
+		)
+	}
+
+	return context
+}
+
+export default useCategories

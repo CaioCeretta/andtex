@@ -4,10 +4,10 @@ import {
 	DropdownMenuItem,
 	DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import { capitalizeString } from '@/lib/utils'
+import useCategories from '@/data/hooks/useCategories'
 
 export interface Category {
 	id: string
@@ -20,21 +20,7 @@ export interface Category {
 // }
 
 export default function ProductsNavDropdown() {
-	const [categories, setCategories] = useState<Category[]>(
-		[]
-	)
-
-	useEffect(() => {
-		async function getCategoriesProducts() {
-			const response = await fetch('/data/products.json')
-
-			const data = await response.json()
-
-			setCategories(data.categories)
-		}
-
-		getCategoriesProducts()
-	}, [])
+	const { categories } = useCategories()
 
 	return (
 		<div className="">

@@ -3,16 +3,19 @@ import { ThemeProvider } from 'styled-components'
 import { Router } from './pages/Router'
 import { GlobalStyle } from './styles/global'
 import { defaultTheme } from './styles/themes/default'
-import { CategoriasProvider } from './data/contexts/Produtos'
+import { CategoriesProvider } from './data/contexts/CategoriesContext'
+import { ProductsProvider } from './data/contexts/ProductsContext'
 
 function App() {
 	return (
 		<ThemeProvider theme={defaultTheme}>
-			<CategoriasProvider>
-				<BrowserRouter>
-					<Router />
-				</BrowserRouter>
-			</CategoriasProvider>
+			<CategoriesProvider>
+				<ProductsProvider>
+					<BrowserRouter>
+						<Router />
+					</BrowserRouter>
+				</ProductsProvider>
+			</CategoriesProvider>
 			<GlobalStyle />
 		</ThemeProvider>
 	)
