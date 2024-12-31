@@ -1,9 +1,8 @@
 import styled from 'styled-components'
 
 export const LayoutContainer = styled.div`
-  max-width: 120rem;
+  max-width: 100rem;
 
-  margin: 5rem auto;
   padding: 0 2.5rem;
 
   background: ${(props) => props.theme['gray-50']};
@@ -11,4 +10,11 @@ export const LayoutContainer = styled.div`
 
   display: flex;
   flex-direction: column;
+
+  min-height: 100vh
+`
+
+export const Main = styled.div`
+  max-width: 80rem;
+  margin: 0 auto;
 `

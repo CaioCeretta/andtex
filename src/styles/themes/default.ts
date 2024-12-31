@@ -3,6 +3,11 @@ export const defaultTheme = {
 
   'main-yellow': '#FEC107',
   'secondary-yellow': '#A28428',
+  'yellow-nav': '#FEC106',
+
+
+  'blue-text': '#013344',
+
 
   'gray-50': '#F7F7FC',
   'gray-300': '#C4C4CC',

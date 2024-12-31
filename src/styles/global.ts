@@ -13,9 +13,14 @@ export const GlobalStyle = createGlobalStyle`
     box-shadow: 0 0 0 2px ${(props) => props.theme['green-500']}
   }
 
+  html, body, #root {
+    height: 100%;
+    width: 100%;
+  }
+
   body {
     background: ${(props) => props.theme.white};
-    color: ${(props) => props.theme['secondary-yellow']};
+    color: rgb(82 82 91);
   }
 
   body, input, textarea, button {

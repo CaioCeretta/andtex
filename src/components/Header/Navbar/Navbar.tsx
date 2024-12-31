@@ -1,49 +1,59 @@
-import { useNavigate } from 'react-router-dom'
-import logo from '../../../assets/logo.png'
-import NavbarToggler from './NavbarToggler'
-import NavItem from './NavbarItem'
+import MaxWidthWrapper from '@/components/MaxWidthWrapper'
+import { Input } from '@/components/ui/input'
+import { Link } from 'react-router-dom'
+
+import { MagnifyingGlassIcon } from '@radix-ui/react-icons'
+import { FaBuilding, FaWhatsapp } from 'react-icons/fa'
+import ProductsNavDropdown from './DropdownProducts/ProductsNavDropdown'
 
 const Navbar = () => {
-  const navigate = useNavigate()
+	return (
+		<div className="mb-10">
+			<nav
+				className="transition-all inset-x-0 top-0  h-[125px] w-full border-b
+    border-secondary-yellow bg-yellow-nav px-10"
+			>
+				<MaxWidthWrapper className="max-w-10xl">
+					<div className="flex h-[110px] items-center justify-between px-3">
+						<div className="relative w-36 h-[90%] border-0 outline-none">
+							<a href="/">
+								<img src="/andtex-logo.png" alt="logo" />
+							</a>
+						</div>
 
-  return (
-    <>
-      <div className="flex flex-wrap shadow-sm z-30 top-0 sticky justify-between bg-[#FEC107] items-center">
-        <div>
-          <img
-            src={logo}
-            className="w-[8rem] px-3 md:w-[8rem] lg:w-[10em] xl:w-[12rem] cursor-pointer"
-            alt="logo"
-            onClick={() => navigate('/')}
-          />
-        </div>
-        <nav className="hidden w-[5rem] md:w-[50vw] text-md md:flex justify-between px-10">
-          <NavItem title="Produtos" path="/produtos" />
-          <NavItem title="Quem somos" path="/sobre" />
-          <NavItem title="Qualidade" path="/qualidade" />
-        </nav>
-        <NavbarToggler />
-      </div>
+						<div>
+							<form
+								className="relative w-full z-20 ml-auto xl:w-[460px] md:w-[360px] mr-[40px] mt-0 mb-0
+          "
+							>
+								<div className="flex relative justify-center items-center">
+									<Input
+										type="search"
+										className="bg-white w-full relative h-[56px] pt-0 pr-2 pb-0 pl-2 font-medium
+              text-medium text-gray-800 border-b border-gray-300"
+										placeholder="O que deseja?"
+									/>
+									<MagnifyingGlassIcon className="w-8 h-8 absolute right-2" />
+								</div>
+							</form>
+						</div>
 
-      {/* <div className="bg-[#a28428] py-2 px-5">
-        <form className="px-10" style={{ flex: '0 0 auto' }}>
-          <input
-            type="search"
-            className="rounded placeholder-transparent md:placeholder-current text-xs md:text-lg border-[#033246] border-2 px-2 max-w-[10rem] md:max-w-[15rem] lg:max-w-[30rem] md:flex-row flex-col"
-            name=""
-            id=""
-            placeholder="Ex: AND 601"
-          />
-          <button
-            type="button"
-            className="border text-sm md:text-md border-[#033246] rounded p-1.5 ml-3"
-          >
-            Pesquisar
-          </button>
-        </form>
-      </div> */}
-    </>
-  )
+						<div className="flex h-full items-center space-x-20 text-blue-text font-medium text-lg">
+							<ProductsNavDropdown />
+							<div className="flex justify-center items-center gap-x-2">
+								<Link to="/contato">Contato</Link>
+								<FaWhatsapp className="w-8 h-8" />
+							</div>
+							<div className="flex justify-center items-center gap-x-2">
+								<Link to="/quem-somos">Quem Somos</Link>
+								<FaBuilding className="w-8 h-8" />
+							</div>
+						</div>
+					</div>
+				</MaxWidthWrapper>
+			</nav>
+		</div>
+	)
 }
 
-export { Navbar }
+export default Navbar
