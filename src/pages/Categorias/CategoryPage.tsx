@@ -27,8 +27,7 @@ export default function CategoryPage() {
 
 	const { products } = useProducts()
 
-	const { categories, setSelectedCategory } =
-		useCategories()
+	const { categories, selectCategory } = useCategories()
 
 	const currentCategory = categories.find(
 		(cat) => cat.name === categoryName
@@ -36,13 +35,9 @@ export default function CategoryPage() {
 
 	useEffect(() => {
 		if (currentCategory) {
-			setSelectedCategory(currentCategory.id)
-		} else {
-			setSelectedCategory(null)
+			selectCategory(currentCategory.id)
 		}
-
-		return () => setSelectedCategory(null)
-	}, [categoryName, setSelectedCategory])
+	}, [categoryName, selectCategory])
 
 	if (!currentCategory) {
 		return <div>Categoria não encontrada</div>
@@ -54,7 +49,7 @@ export default function CategoryPage() {
 				{capitalizeString(categoryName!)}
 			</h1>
 			<div className="flex gap-5">
-				<ProductsByCategory products={products} />
+				<ProductsByCategory />
 			</div>
 		</MaxWidthWrapper>
 	)

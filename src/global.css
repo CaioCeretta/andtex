@@ -59,12 +59,10 @@
 	}
 }
 
-@layer base {
-	* {
-		@apply border-border;
-	}
-	body {
-		@apply bg-background text-foreground;
-		@apply text-zinc-500;
-	}
+* {
+	@apply border-border;
+}
+body {
+	@apply bg-background text-foreground;
+	@apply text-zinc-500;
 }

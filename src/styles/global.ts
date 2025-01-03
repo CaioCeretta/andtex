@@ -19,6 +19,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    min-height: 100%; 
     background: ${(props) => props.theme.white};
     color: rgb(82 82 91);
   }

@@ -24,8 +24,6 @@ const dataTyped: DataFormat = data as DataFormat
 // Criação dos contextos
 export const CategoriesContext =
 	createContext<CategoriesContextProps>({} as any)
-export const ProductsContext =
-	createContext<ProductsContextProps>({} as any)
 
 export const CategoriesProvider = (props: any) => {
 	const [categories, setCategories] = useState<Category[]>(
@@ -40,11 +38,15 @@ export const CategoriesProvider = (props: any) => {
 		setCategories(data.categories)
 	}, [])
 
+	function selectCategory(categoryId: number): void {
+		setSelectedCategory(categoryId)
+	}
+
 	const value = useMemo(
 		() => ({
 			categories,
 			selectedCategory,
-			setSelectedCategory,
+			selectCategory,
 		}),
 		[categories, selectedCategory]
 	)

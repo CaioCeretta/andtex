@@ -6,12 +6,13 @@ import { createContext, useMemo } from 'react'
 import useCategories from '../hooks/useCategories'
 import data from '../db/products.json'
 
-const ProductsContext = createContext<ProductsContextProps>(
-	{} as any
-)
+export const ProductsContext =
+	createContext<ProductsContextProps>({} as any)
 
 export const ProductsProvider = (props: any) => {
 	const { selectedCategory } = useCategories()
+
+	console.log(selectedCategory)
 
 	const filteredProducts = useMemo(
 		() =>
@@ -20,7 +21,7 @@ export const ProductsProvider = (props: any) => {
 						(product: Product) =>
 							product.categoryId === selectedCategory
 					)
-				: [],
+				: data.products,
 		[selectedCategory]
 	)
 

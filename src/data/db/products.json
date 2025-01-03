@@ -17,7 +17,42 @@
     {
       "id": 1,
       "name": "fio-1",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede. Donec nec justo eget felis facilisis fermentum.Aliquam porttitor mauris sit amet orci.Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare.Pellentesque odio nisi euismod in pharetra a ultricies in diam.Sed arcu.Cras consequat. Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat.Aliquam erat volutpat.Nam dui mi tincidunt quis accumsan porttitor facilisis luctus metus. Phasellus ultrices nulla quis nibh.Quisque a lectus.Donec consectetuer ligula vulputate sem tristique cursus.Nam nulla quam gravida non commodo a sodales sit amet nisi.",
+      "slug": "fio-1",
+      "description": {
+        "characteristics": [
+          "Material isento de poliéster / algodão",
+          "Isento de tratamento antichama, podendo ser lavado ou molhado sem prejuizo tecnico",
+          "Excelentes propriedades de isolação térmica;",
+          "Alta resistência à ruptura",
+          "Alta resistência ao corte",
+          "Resistência à chama direta e a respingos de solda",
+          "Alta resistência à abrasão",
+          "Excelente maleabilidade",
+          "Compatível com silicones, colas diversas e tintas isolantes."
+        ],
+        "applications": [
+          "Equipamentos de proteção individual",
+          "Cabines e cortinas para solda",
+          "Juntas de expansão",
+          "Isolamento para pisos e salas de forno"
+        ],
+        "specifications": [
+          {
+            "Espessura": "1.4mm",
+            "Gramatura": "0.650g/m²",
+            "Resistência à ruptura": "200.78kg",
+            "Largura": "1.2mm",
+            "Construção": "Tela"
+          },
+          {
+            "Espessura": "1.7mm",
+            "Gramatura": "0.700g/m²",
+            "Resistência à ruptura": "200.78kg",
+            "Largura": "1.2mm",
+            "Construção": "Tela"
+          }
+        ]
+      },
       "categoryId": 1,
       "images": [
         "https://www.laformosa.com.br/octopus/design/imagess/70/products/b/LF_Lurex500_es.jpg",
@@ -25,9 +60,44 @@
       ]
     },
     {
-      "name": "fio-2",
       "id": 2,
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede. Donec nec justo eget felis facilisis fermentum.Aliquam porttitor mauris sit amet orci.Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare.Pellentesque odio nisi euismod in pharetra a ultricies in diam.Sed arcu.Cras consequat. Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat.Aliquam erat volutpat.Nam dui mi tincidunt quis accumsan porttitor facilisis luctus metus. Phasellus ultrices nulla quis nibh.Quisque a lectus.Donec consectetuer ligula vulputate sem tristique cursus.Nam nulla quam gravida non commodo a sodales sit amet nisi.",
+      "name": "fio-2",
+      "slug": "fio-2",
+      "description": {
+        "characteristics": [
+          "Material isento de poliéster / algodão",
+          "Isento de tratamento antichama, podendo ser lavado ou molhado sem prejuizo tecnico",
+          "Excelentes propriedades de isolação térmica;",
+          "Alta resistência à ruptura",
+          "Alta resistência ao corte",
+          "Resistência à chama direta e a respingos de solda",
+          "Alta resistência à abrasão",
+          "Excelente maleabilidade",
+          "Compatível com silicones, colas diversas e tintas isolantes."
+        ],
+        "applications": [
+          "Equipamentos de proteção individual",
+          "Cabines e cortinas para solda",
+          "Juntas de expansão",
+          "Isolamento para pisos e salas de forno"
+        ],
+        "specifications": [
+          {
+            "Espessura": "1.4mm",
+            "Gramatura": "0.650g/m²",
+            "Resistência à ruptura": "200.78kg",
+            "Largura": "1.2mm",
+            "Construção": "Tela"
+          },
+          {
+            "Espessura": "1.7mm",
+            "Gramatura": "0.700g/m²",
+            "Resistência à ruptura": "200.78kg",
+            "Largura": "1.2mm",
+            "Construção": "Tela"
+          }
+        ]
+      },
       "categoryId": 1,
       "images": [
         "https://www.laformosa.com.br/octopus/design/imagess/70/products/b/LF_Lurex500_es.jpg",
@@ -37,7 +107,42 @@
     {
       "id": 3,
       "name": "fita-1",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede. Donec nec justo eget felis facilisis fermentum.Aliquam porttitor mauris sit amet orci.Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare.Pellentesque odio nisi euismod in pharetra a ultricies in diam.Sed arcu.Cras consequat. Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat.Aliquam erat volutpat.Nam dui mi tincidunt quis accumsan porttitor facilisis luctus metus. Phasellus ultrices nulla quis nibh.Quisque a lectus.Donec consectetuer ligula vulputate sem tristique cursus.Nam nulla quam gravida non commodo a sodales sit amet nisi.",
+      "slug": "fita-1",
+      "description": {
+        "characteristics": [
+          "Material isento de poliéster / algodão",
+          "Isento de tratamento antichama, podendo ser lavado ou molhado sem prejuizo tecnico",
+          "Excelentes propriedades de isolação térmica;",
+          "Alta resistência à ruptura",
+          "Alta resistência ao corte",
+          "Resistência à chama direta e a respingos de solda",
+          "Alta resistência à abrasão",
+          "Excelente maleabilidade",
+          "Compatível com silicones, colas diversas e tintas isolantes."
+        ],
+        "applications": [
+          "Equipamentos de proteção individual",
+          "Cabines e cortinas para solda",
+          "Juntas de expansão",
+          "Isolamento para pisos e salas de forno"
+        ],
+        "specifications": [
+          {
+            "Espessura": "1.4mm",
+            "Gramatura": "0.650g/m²",
+            "Resistência à ruptura": "200.78kg",
+            "Largura": "1.2mm",
+            "Construção": "Tela"
+          },
+          {
+            "Espessura": "1.7mm",
+            "Gramatura": "0.700g/m²",
+            "Resistência à ruptura": "200.78kg",
+            "Largura": "1.2mm",
+            "Construção": "Tela"
+          }
+        ]
+      },
       "categoryId": 3,
       "images": [
         "https://alltape.com.br/wp-content/uploads/2021/07/industrial-03.jpg",
@@ -47,7 +152,42 @@
     {
       "id": 4,
       "name": "fita-2",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede. Donec nec justo eget felis facilisis fermentum.Aliquam porttitor mauris sit amet orci.Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare.Pellentesque odio nisi euismod in pharetra a ultricies in diam.Sed arcu.Cras consequat. Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat.Aliquam erat volutpat.Nam dui mi tincidunt quis accumsan porttitor facilisis luctus metus. Phasellus ultrices nulla quis nibh.Quisque a lectus.Donec consectetuer ligula vulputate sem tristique cursus.Nam nulla quam gravida non commodo a sodales sit amet nisi.",
+      "slug": "fita-2",
+      "description": {
+        "characteristics": [
+          "Material isento de poliéster / algodão",
+          "Isento de tratamento antichama, podendo ser lavado ou molhado sem prejuizo tecnico",
+          "Excelentes propriedades de isolação térmica;",
+          "Alta resistência à ruptura",
+          "Alta resistência ao corte",
+          "Resistência à chama direta e a respingos de solda",
+          "Alta resistência à abrasão",
+          "Excelente maleabilidade",
+          "Compatível com silicones, colas diversas e tintas isolantes."
+        ],
+        "applications": [
+          "Equipamentos de proteção individual",
+          "Cabines e cortinas para solda",
+          "Juntas de expansão",
+          "Isolamento para pisos e salas de forno"
+        ],
+        "specifications": [
+          {
+            "Espessura": "1.4mm",
+            "Gramatura": "0.650g/m²",
+            "Resistência à ruptura": "200.78kg",
+            "Largura": "1.2mm",
+            "Construção": "Tela"
+          },
+          {
+            "Espessura": "1.7mm",
+            "Gramatura": "0.700g/m²",
+            "Resistência à ruptura": "200.78kg",
+            "Largura": "1.2mm",
+            "Construção": "Tela"
+          }
+        ]
+      },
       "categoryId": 3,
       "images": [
         "https://alltape.com.br/wp-content/uploads/2021/07/industrial-03.jpg",
@@ -56,18 +196,85 @@
     },
     {
       "id": 5,
-      "name": "Tecido de fibra de aramida cardado",
+      "name": "Tecido de fibra de aramida filamento",
+      "slug": "tecido-de-fibra-de-aramida-filamento",
       "categoryId": 2,
-      "description": "<h2>Características:</h2> <ul> <li>Material isento de poliéster / algodão</li> <li>Isento de tratamento antichama, podendo ser lavado ou molhado sem prejuízo técnico</li> <li>Excelentes propriedades de isolação térmica</li> <li>Alta resistência à ruptura</li> <li>Alta resistência ao corte</li> <li>Resistência à chama direta e a respingos de solda</li> <li>Alta resistência à abrasão</li> <li>Excelente maleabilidade</li> <li>Compatível com silicones, colas diversas e tintas isolantes</li> </ul> <h2>Aplicações:</h2> <ul> <li>Equipamentos de proteção individual</li> <li>Cabines e cortinas para solda</li> <li>Juntas de expansão</li> <li>Isolamento para pisos e salas de forno</li> </ul> <h2>Especificações:</h2> <table class=\"border border-zinc-600\"> <thead> <tr> <th>Espessura</th> <th>Gramatura</th> <th>Resistência à ruptura</th> <th>Largura</th> <th>Construção</th> </tr> </thead> <tbody> <tr> <td>1.4mm</td> <td>0.650g/m²</td> <td>200.78kg</td> <td>1.2m</td> <td>Tela</td> </tr> <tr> <td>1.7mm</td> <td>0.700g/m²</td> <td>200.78kg</td> <td>1.2m</td> <td>Tela</td> </tr> </tbody> </table>",
+      "description": {
+        "characteristics": [
+          "Excelentes propriedades de isolação térmica",
+          "Alta resistência à ruptura",
+          "Alta resistência ao corte",
+          "Resistência à chama direta",
+          "Alta resistência à abrasão",
+          "Excelente maleabilidade",
+          "Compatível com silicones, colas diversas e tintas isolantes."
+        ],
+        "applications": [
+          [
+            "Alta gama de aplicações, principalmente fabricação de EPIs, dutos sanfonados, proteções térmicas, juntas de expansão, cortinas para proteção contra respingos de solda."
+          ]
+        ],
+        "specifications": [
+          {
+            "Espessura": "0.6mm",
+            "Gramatura": "0.412g/m²",
+            "Resistência à ruptura": "403kg",
+            "Largura": "1.2mm",
+            "Construção": "Tela"
+          },
+          {
+            "Espessura": "1.2mm",
+            "Gramatura": "0.600g/m²",
+            "Resistência à ruptura": "806kg",
+            "Largura": "1.2mm",
+            "Construção": "Tela"
+          }
+        ]
+      },
       "images": [
-        "https://processoindustrial.com.br/wp-content/uploads/2020/11/tecidos-filtrantes-01.jpg",
-        "https://processoindustrial.com.br/wp-content/uploads/2020/11/tecidos-filtrantes-02-600x600.jpg"
+        "https://i.ibb.co/480qctC/tecido-fibra-aramida-filamento.png",
+        "https://i.ibb.co/480qctC/tecido-fibra-aramida-filamento.png"
       ]
     },
     {
       "id": 6,
-      "name": "tecido-2",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede. Donec nec justo eget felis facilisis fermentum.Aliquam porttitor mauris sit amet orci.Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare.Pellentesque odio nisi euismod in pharetra a ultricies in diam.Sed arcu.Cras consequat. Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat.Aliquam erat volutpat.Nam dui mi tincidunt quis accumsan porttitor facilisis luctus metus. Phasellus ultrices nulla quis nibh.Quisque a lectus.Donec consectetuer ligula vulputate sem tristique cursus.Nam nulla quam gravida non commodo a sodales sit amet nisi.",
+      "slug": "Tecido de fibra de aramida cardado",
+      "name": "tecido-fibra-aramida-cardado",
+      "description": {
+        "characteristics": [
+          "Material isento de poliéster / algodão",
+          "Isento de tratamento antichama, podendo ser lavado ou molhado sem prejuizo tecnico",
+          "Excelentes propriedades de isolação térmica;",
+          "Alta resistência à ruptura",
+          "Alta resistência ao corte",
+          "Resistência à chama direta e a respingos de solda",
+          "Alta resistência à abrasão",
+          "Excelente maleabilidade",
+          "Compatível com silicones, colas diversas e tintas isolantes."
+        ],
+        "applications": [
+          "Equipamentos de proteção individual",
+          "Cabines e cortinas para solda",
+          "Juntas de expansão",
+          "Isolamento para pisos e salas de forno"
+        ],
+        "specifications": [
+          {
+            "Espessura": "1.4mm",
+            "Gramatura": "0.650g/m²",
+            "Resistência à ruptura": "200.78kg",
+            "Largura": "1.2mm",
+            "Construção": "Tela"
+          },
+          {
+            "Espessura": "1.7mm",
+            "Gramatura": "0.700g/m²",
+            "Resistência à ruptura": "200.78kg",
+            "Largura": "1.2mm",
+            "Construção": "Tela"
+          }
+        ]
+      },
       "categoryId": 2,
       "images": [
         "https://processoindustrial.com.br/wp-content/uploads/2020/11/tecidos-filtrantes-01.jpg",

@@ -1,20 +1,23 @@
 import styled from 'styled-components'
 
 export const LayoutContainer = styled.div`
-  max-width: 100rem;
-
-  padding: 0 2.5rem;
-
-  background: ${(props) => props.theme['gray-50']};
+  max-width: 100%;
+  width: 140rem;
   border-radius: 8px;
 
-  display: flex;
+  margin: 0 auto;
   flex-direction: column;
-
-  min-height: 100vh
+  align-items: center;
+  flex: 1;
 `
 
 export const Main = styled.div`
-  max-width: 80rem;
   margin: 0 auto;
 `
+
+export const ContentWrapper = styled.div`
+  width: 100rem;
+  
+  margin: 0 auto;
+`
+

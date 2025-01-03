@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { ProductsContext } from '../contexts/CategoriesContext'
+import { ProductsContext } from '../contexts/ProductsContext'
 
 const useProducts = () => {
 	const context = useContext(ProductsContext)

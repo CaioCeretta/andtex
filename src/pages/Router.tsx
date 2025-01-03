@@ -23,7 +23,7 @@ export function Router() {
 				/>
 
 				<Route
-					path="produtos/:productName"
+					path="produtos/:productSlug"
 					element={<Product />}
 				/>
 

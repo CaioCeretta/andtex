@@ -1,14 +1,24 @@
-import { Outlet } from 'react-router-dom'
 import Navbar from '@/components/Header/Navbar/Navbar'
-import { LayoutContainer, Main } from './styles'
+import { Outlet } from 'react-router-dom'
+import {
+	ContentWrapper,
+	LayoutContainer,
+	Main,
+} from './styles'
+import Footer from '@/components/Rodape'
 
 export function DefaultLayout() {
 	return (
-		<LayoutContainer>
+		<div className="flex flex-col min-h-screen">
 			<Navbar />
-			<Main>
-				<Outlet />
-			</Main>
-		</LayoutContainer>
+			<LayoutContainer>
+				<Main>
+					<ContentWrapper>
+						<Outlet />
+					</ContentWrapper>
+				</Main>
+			</LayoutContainer>
+			<Footer />
+		</div>
 	)
 }

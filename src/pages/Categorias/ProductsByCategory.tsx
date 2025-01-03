@@ -4,21 +4,24 @@ import { useNavigate } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { capitalizeString } from '@/lib/utils'
+import useProducts from '@/data/hooks/useProducts'
 
-type ProductsByCategoryProps = {
-	products: {
-		id: number
-		name: string
-		description: string
-		categoryId: number
-		images: string[]
-	}[]
-}
+// type ProductsByCategoryProps = {
+// 	products: {
+// 		id: number
+// 		name: string
+// 		description: string
+// 		categoryId: number
+// 		images: string[]
+// 	}[]
+// }
 
-const ProductsByCategory = ({
-	products,
-}: ProductsByCategoryProps) => {
+const ProductsByCategory = () => {
 	const navigate = useNavigate()
+
+	const { products } = useProducts()
+
+	console.log(products)
 
 	return (
 		<>
@@ -32,7 +35,7 @@ const ProductsByCategory = ({
 								<div className="grid gap-4 p-4">
 									<div className="aspect-square w-full overflow-hidden rounded-xl">
 										<img
-											src={productImage}
+											src={product.images[0]}
 											alt={product.name || 'Product image'}
 											className="aspect-4/5 object-cover border w-[250px]"
 										/>
@@ -41,13 +44,10 @@ const ProductsByCategory = ({
 										<h3 className="font-semibold text-sm md:text-base text-blue-text">
 											{capitalizeString(product.name)}
 										</h3>
-										<p className="text-sm md:text-base text-blue-text">
-											{product.description}
-										</p>
 									</div>
 									<Button
 										onClick={() =>
-											navigate(`/produtos/${product.name}`)
+											navigate(`/produtos/${product.slug}`)
 										}
 										size="sm"
 										variant="default"

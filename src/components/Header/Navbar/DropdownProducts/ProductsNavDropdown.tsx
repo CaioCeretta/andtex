@@ -4,15 +4,11 @@ import {
 	DropdownMenuItem,
 	DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import { capitalizeString } from '@/lib/utils'
 import useCategories from '@/data/hooks/useCategories'
-
-export interface Category {
-	id: string
-	name: string
-}
+import type { Category } from '@/shared/interfaces'
 
 // interface ProductsNavDropdownProps {
 //   categories: Category[]
@@ -20,7 +16,14 @@ export interface Category {
 // }
 
 export default function ProductsNavDropdown() {
-	const { categories } = useCategories()
+	const { categories, selectCategory } = useCategories()
+
+	const navigate = useNavigate()
+
+	const handleCategoryClick = (category: Category) => {
+		selectCategory(category.id)
+		navigate(`/categorias/${category.name}`)
+	}
 
 	return (
 		<div className="">
@@ -37,6 +40,7 @@ export default function ProductsNavDropdown() {
 					</DropdownMenuItem>
 					{categories.map((category) => (
 						<DropdownMenuItem
+							onClick={() => selectCategory(category.id)}
 							className="text-justify text-blue-text font-semibold border-b-1 z-20 bg-main-yellow  w-100 py-4"
 							key={category.id}
 						>
