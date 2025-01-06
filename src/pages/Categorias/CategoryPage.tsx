@@ -44,7 +44,7 @@ export default function CategoryPage() {
 	}
 
 	return (
-		<MaxWidthWrapper className="mt-10">
+		<MaxWidthWrapper className="mt-10 flex flex-col">
 			<h1 className="mb-3 font-semibold text-2xl text-blue-text">
 				{capitalizeString(categoryName!)}
 			</h1>
