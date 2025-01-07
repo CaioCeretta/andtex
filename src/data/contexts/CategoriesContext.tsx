@@ -7,19 +7,17 @@ import {
 
 import {
 	Category,
-	Product,
 	CategoriesContextProps,
-	ProductsContextProps,
 } from '../../shared/interfaces'
 
 import data from '../db/products.json' // Importando o JSON localmente
 
-interface DataFormat {
-	categories: Category[]
-	products: Product[]
-}
+// interface DataFormat {
+// 	categories: Category[]
+// 	products: Product[]
+// }
 
-const dataTyped: DataFormat = data as DataFormat
+// const dataTyped: DataFormat = data as DataFormat
 
 // Criação dos contextos
 export const CategoriesContext =

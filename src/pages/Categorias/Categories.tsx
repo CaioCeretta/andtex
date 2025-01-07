@@ -6,7 +6,7 @@ export default function Categories() {
 	return (
 		<div>
 			{categories.map((category) => {
-				return <p>{category.name}</p>
+				return <p key={category.id}>{category.name}</p>
 			})}
 		</div>
 	)

@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Footer() {
 	return (
 		<div className="w-100 py-2 bg-main-yellow flex items-center justify-center">

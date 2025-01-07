@@ -1,4 +1,3 @@
-import ImageSlider from '@/components/ImagesSlider'
 import OrcamentoModal from '@/components/OrcamentoModal'
 import { Button } from '@/components/ui/button'
 import * as Dialog from '@/components/ui/dialog'
@@ -21,8 +20,7 @@ const Produto: React.FC = () => {
 	const [product, setProduct] = useState<Product | null>(
 		null
 	)
-	const [categoryName, setCategoryName] =
-		useState<string>('')
+	const [_, setCategoryName] = useState<string>('')
 
 	useEffect(() => {
 		const fetchProduct = async () => {
@@ -95,44 +93,79 @@ const Produto: React.FC = () => {
 						<table className="table-auto border-collapse border border-zinc-600 w-full text-left">
 							<thead>
 								<tr className="bg-zinc-100">
-									<th className="border border-zinc-600 px-4 py-2">
-										Espessura
-									</th>
-									<th className="border border-zinc-600 px-4 py-2">
-										Gramatura
-									</th>
-									<th className="border border-zinc-600 px-4 py-2">
-										Resistência à ruptura
-									</th>
-									<th className="border border-zinc-600 px-4 py-2">
-										Largura
-									</th>
-									<th className="border border-zinc-600 px-4 py-2">
-										Construção
-									</th>
+									{product.categoryId === 2 ? (
+										<>
+											<th className="border border-zinc-600 px-4 py-2">
+												Espessura
+											</th>
+											<th className="border border-zinc-600 px-4 py-2">
+												Gramatura
+											</th>
+											<th className="border border-zinc-600 px-4 py-2">
+												Resistência à ruptura
+											</th>
+											<th className="border border-zinc-600 px-4 py-2">
+												Largura
+											</th>
+											<th className="border border-zinc-600 px-4 py-2">
+												Construção
+											</th>
+										</>
+									) : product.categoryId === 3 ? (
+										<>
+											<th className="border border-zinc-600 px-4 py-2">
+												Espessura
+											</th>
+											<th className="border border-zinc-600 px-4 py-2">
+												Largura
+											</th>
+											<th className="border border-zinc-600 px-4 py-2">
+												Ruptura
+											</th>
+											<th className="border border-zinc-600 px-4 py-2">
+												Temperatura de Trabalho
+											</th>
+										</>
+									) : null}
 								</tr>
 							</thead>
 							<tbody>
 								{product.description.specifications.map(
-									(spec, index) => (
-										<tr key={index}>
-											<td className="border border-zinc-600 px-4 py-2">
-												{spec.Espessura}
-											</td>
-											<td className="border border-zinc-600 px-4 py-2">
-												{spec.Gramatura}
-											</td>
-											<td className="border border-zinc-600 px-4 py-2">
-												{spec['Resistência à ruptura']}
-											</td>
-											<td className="border border-zinc-600 px-4 py-2">
-												{spec.Largura}
-											</td>
-											<td className="border border-zinc-600 px-4 py-2">
-												{spec.Construção}
-											</td>
-										</tr>
-									)
+									(spec, index) =>
+										product.categoryId === 2 ? (
+											<tr key={index}>
+												<td className="border border-zinc-600 px-4 py-2">
+													{spec.espessura}
+												</td>
+												<td className="border border-zinc-600 px-4 py-2">
+													{spec.gramatura}
+												</td>
+												<td className="border border-zinc-600 px-4 py-2">
+													{spec.resistenciaRuptura}
+												</td>
+												<td className="border border-zinc-600 px-4 py-2">
+													{spec.largura}
+												</td>
+												<td className="border border-zinc-600 px-4 py-2">
+													{spec.construcao}
+												</td>
+											</tr>
+										) : product.categoryId === 3 ? (
+											<tr key={index}>
+												<td className="border border-zinc-600 px-4 py-2">
+													{spec.espessura}
+												</td>
+												<td className="border border-zinc-600 px-4 py-2">
+													{spec.largura}
+												</td>
+												<td className="border border-zinc-600 px-4 py-2">
+													{spec.ruptura}
+												</td>
+												<td className="border border-zinc-600 px-4 py-2">
+													{spec.temperaturaTrabalho}
+												</td>
+											</tr>
+										) : null
 								)}
 							</tbody>
 						</table>
@@ -156,7 +189,12 @@ const Produto: React.FC = () => {
 				</Dialog.Dialog>
 			</div>
 			<div className="max-w-[35rem] w-full h-[45rem] m-auto relative group">
-				<ImageSlider images={product.images} />{' '}
+				<img
+					className="object-cover w-full h-full rounded-2xl bg-center bg-cover duration-500"
+					src={product.images[0]}
+					alt={product.name}
+				/>
+				{/* <ImageSlider images={product.images} /> */}
 			</div>
 		</div>
 	)
