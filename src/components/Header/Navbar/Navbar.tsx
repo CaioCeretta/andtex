@@ -10,18 +10,23 @@ const Navbar = () => {
 	return (
 		<div className="mb-10">
 			<nav
-				className="transition-all inset-x-0 top-0  h-[125px] w-full border-b
-    border-secondary-yellow bg-yellow-nav px-10"
+				className="transition-all inset-x-0 top-0 md:h-[80px] lg:h-[125px] 
+				h-[75px] w-full border-b border-secondary-yellow bg-yellow-nav
+				px-2 md:px-5 lg:px-10"
 			>
 				<MaxWidthWrapper className="max-w-10xl">
-					<div className="flex h-[110px] items-center justify-between px-3">
-						<div className="relative w-36 h-[90%] border-0 outline-none">
+					<div className="flex h-[60px] md:h-[80px] lg:h-[125px] items-center justify-between px-3">
+						<div className="relative w-36 h-[8rem] sm:h-[12rem] flex items-center border-0 outline-none">
 							<a href="/">
-								<img src="/andtex-logo.png" alt="logo" />
+								<img
+									src="/andtex-logo.png"
+									className="h-20 lg:h-full w-full"
+									alt="logo"
+								/>
 							</a>
 						</div>
 
-						<div>
+						{/* <div>
 							<form
 								className="relative w-full z-20 ml-auto xl:w-[460px] md:w-[360px] mr-[40px] mt-0 mb-0
           "
@@ -36,17 +41,17 @@ const Navbar = () => {
 									<MagnifyingGlassIcon className="w-8 h-8 absolute right-2" />
 								</div>
 							</form>
-						</div>
+						</div> */}
 
-						<div className="flex h-full items-center space-x-20 text-blue-text font-medium text-lg">
+						<div className="flex h-full items-center space-x-5 lg:space-x-20 text-blue-text font-medium text-lg">
 							<ProductsNavDropdown />
-							<div className="flex justify-center items-center gap-x-2">
+							<div className="text-sm lg:text-lg flex justify-center items-center gap-x-2">
 								<Link to="/contato">Contato</Link>
-								<FaWhatsapp className="w-8 h-8" />
+								<FaWhatsapp className="lg:w-8 lg:h-8 w-3 h-3" />
 							</div>
-							<div className="flex justify-center items-center gap-x-2">
+							<div className="text-sm lg:text-lg  flex justify-center items-center gap-x-2">
 								<Link to="/quem-somos">Quem Somos</Link>
-								<FaBuilding className="w-8 h-8" />
+								<FaBuilding className="lg:w-8 lg:h-8 h-4 w-4" />
 							</div>
 						</div>
 					</div>

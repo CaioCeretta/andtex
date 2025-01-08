@@ -77,7 +77,10 @@ export default function ProductTable(props: ProductProps) {
 						>
 							{product.categoryId === 1 ? (
 								<>
-									<td className="border border-gray-300 px-6 py-4">
+									<td
+										className="border border-gray-300 px-1 md:px-3 lg:px-6
+									py-2 md:py-3 lg:py-4"
+									>
 										{spec.tex}
 									</td>
 									<td className="border border-gray-300 px-6 py-4">

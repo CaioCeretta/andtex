@@ -56,7 +56,7 @@ const Produto: React.FC = () => {
 				lg:items-center mt-2 text-[14px]"
 			>
 				<div
-					className="order-2 lg:order-1  flex-1 w-full
+					className="order-2 lg:order-1 flex flex-col flex-1 w-full
 				max-w-[20rem] lg:max-w-[30rem] xl:max-w-[40rem] mx-auto"
 				>
 					<div>
@@ -67,7 +67,9 @@ const Produto: React.FC = () => {
 							<h2 className="font-bold text-xl mt-6 mb-4">
 								Especificações:
 							</h2>
-							<ProductTable product={product} />
+							<div className="w-[full flex items-center justify-center]">
+								<ProductTable product={product} />
+							</div>
 						</div>
 					</div>
 					<div className="mt-5">
@@ -75,16 +77,14 @@ const Produto: React.FC = () => {
 					</div>
 				</div>
 				<div
-					className="order-1 lg:order-2 w-full lg:w-full max-h-[35rem] lg:max-h-[45rem]
-				aspect-[3/4] mx-auto pb-5 overflow-auto"
+					className="order-1 lg:order-2 lg:w-[90%] max-h-[40rem] lg:max-h-[50rem]
+    overflow-hidden rounded-2xl mb-5 shadow-md aspect-square mx-auto"
 				>
 					<img
-						className="object-contain w-full h-full rounded-2xl
-						bg-center bg-cover duration-500"
+						className="object-contain w-full h-full bg-center bg-cover duration-500"
 						src={product.images[0]}
 						alt={product.name}
 					/>
-					{/* <ImageSlider images={product.images} /> */}
 				</div>
 			</div>
 		</div>
