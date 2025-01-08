@@ -38,6 +38,7 @@ export interface Product {
 	id: number
 	name: string
 	slug: string
+	resumoAplicacoes?: string
 	description: {
 		applications: string[]
 		characteristics: string[]

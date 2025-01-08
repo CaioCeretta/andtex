@@ -63,7 +63,7 @@ const Produto: React.FC = () => {
 						<ProductDescription product={product} />
 
 						{/* Especificações */}
-						<div className="flex flex-col items-center">
+						<div className="flex flex-col items-center md:block">
 							<h2 className="font-bold text-xl mt-6 mb-4">
 								Especificações:
 							</h2>
@@ -75,11 +75,11 @@ const Produto: React.FC = () => {
 					</div>
 				</div>
 				<div
-					className="order-1 lg:order-2 w-full lg:w-full max-h-[40rem] lg:max-h-[50rem]
+					className="order-1 lg:order-2 w-full lg:w-full max-h-[35rem] lg:max-h-[45rem]
 				aspect-[3/4] mx-auto pb-5 overflow-auto"
 				>
 					<img
-						className="object-contain md:object-cover w-full h-full rounded-2xl
+						className="object-contain w-full h-full rounded-2xl
 						bg-center bg-cover duration-500"
 						src={product.images[0]}
 						alt={product.name}

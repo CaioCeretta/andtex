@@ -191,6 +191,84 @@
       "images": [
         "https://andtextil.com.br/assets/imagens/produtos/fita-aramida-filamento.png"
       ]
+    },
+    {
+      "id": 5,
+      "slug": "fita-fibra-aramida-cardada",
+      "name": "Fita de fibra aramida cardada",
+      "categoryId": 3,
+      "description": {
+        "characteristics": [
+          "Excelente isolação elétrica",
+          "Excelente isolação térmica",
+          "Alta resistência a ruptura no urdume",
+          "Alta resistência ao corte",
+          "Alta resistência a abrasão",
+          "Alta compatibilidade com adesivos, colas, silicones e tintas."
+        ],
+        "applications": [
+          "Isolamento de óleos e fluidos térmicos",
+          "Sistemas de ar frio e quente, cabos elétricos, escapamentos automotivos"
+        ],
+        "specifications": [
+          {
+            "espessura": "1.7mm",
+            "largura": "25, 38, 50, 75, 100mm",
+            "ruptura": "97.8kgf",
+            "temperaturaTrabalho": "Contínuo: 280º - Controlado 400º"
+          },
+          {
+            "espessura": "3.0mm",
+            "largura": "25, 38, 50, 75, 100mm",
+            "ruptura": "195.6kgf",
+            "temperaturaTrabalho": "Contínuo: 280º - Controlado 400º"
+          }
+        ]
+      },
+      "images": [
+        "https://andtextil.com.br/assets/imagens/produtos/fita-aramida-cardada.png"
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "fita-fibra-vidro-texturizada",
+      "name": "Fita Fibra de Vidro Texturizada",
+      "categoryId": 3,
+      "description": {
+        "characteristics": [
+          "Totalmente isentas de amianto ou outras fibras sintéticas",
+          "Excelentes propriedades de isolamento térmico;",
+          "Excelente maleabilidade",
+          "Compatibilidade com silicones, colas e tintas isolantes",
+          "Excelente compatibilidade com elastômeros sintéticos e naturais"
+        ],
+        "applications": [
+          "Isolamento térmico de tubulações, mangueiras, dutos  de escapamentos automotivos, tubulações de ar condicionado e vedação calhas"
+        ],
+        "specifications": [
+          {
+            "espessura": "1.1mm",
+            "largura": "25, 38, 50, 75, 100 e 120mm",
+            "ruptura": "244.2kgf",
+            "temperaturaTrabalho": "Estático: 500º - Dinâmico 260º"
+          },
+          {
+            "espessura": "2.0mm",
+            "largura": "25, 38, 50, 75 e 100mm",
+            "ruptura": "244.2kgf",
+            "temperaturaTrabalho": "Estático: 500º - Dinâmico 260º"
+          },
+          {
+            "espessura": "3.0mm",
+            "largura": "25, 38, 50, 75 e 100mm",
+            "ruptura": "488.4kgf",
+            "temperaturaTrabalho": "Estático: 500º - Dinâmico 260º"
+          }
+        ]
+      },
+      "images": [
+        "https://andtextil.com.br/assets/imagens/produtos/fita-fibra-vidro.png"
+      ]
     }
   ]
 }
