@@ -39,14 +39,14 @@
         ],
         "specifications": [
           {
-            "Tex": 90,
+            "tex": 90,
             "resistenciaRuptura": "5.5kgf",
             "alongamento": "4.1%",
             "resistenciaTemperatura": "400º",
             "metrosQuilo": "11.000"
           },
           {
-            "Tex": 110,
+            "tex": 110,
             "resistenciaRuptura": "24.9kgf",
             "alongamento": "3.4%",
             "resistenciaTemperatura": "400º",
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 2,
       "name": "Tecido de fibra de aramida filamento",
       "slug": "tecido-de-fibra-de-aramida-filamento",
       "categoryId": 2,
@@ -103,7 +103,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 3,
       "slug": "tecido-fibra-aramida-cardado",
       "name": "Tecido de Fibra Aramida Cardado",
       "categoryId": 2,
@@ -144,6 +144,52 @@
       },
       "images": [
         "https://andtextil.com.br/assets/imagens/produtos/tecido-fibra-aramida-cardado.png"
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "fita-aramida-cem-porcento-filamento",
+      "name": "ita de Aramida 100% Filamento",
+      "categoryId": 3,
+      "description": {
+        "characteristics": [
+          "Produzidas com fio 100% aramida filamento;",
+          "Alta resistência à abrasão",
+          "Alta resistência à elétrica",
+          "Alta resistência ao mecânica",
+          "Baixo Alongamento",
+          "Alto módulo",
+          "Alta estabilidade dimensional"
+        ],
+        "applications": [
+          "Isolamento térmico de tubulações",
+          "Isolamento de cabos elétricos",
+          "Amarração de isolamento térmico removível",
+          "EPIs"
+        ],
+        "specifications": [
+          {
+            "espessura": "1.1mm",
+            "largura": "12.5, 25, 38, 50, 75, 100mm",
+            "ruptura": "558kgf",
+            "temperaturaTrabalho": "Contínuo: 280º - Controlado 400º"
+          },
+          {
+            "espessura": "2.0mm",
+            "largura": "12.5, 25, 38, 50, 75, 100mm",
+            "ruptura": "1.116kgf",
+            "temperaturaTrabalho": "Contínuo: 280º - Controlado 400º"
+          },
+          {
+            "espessura": "3.0mm",
+            "largura": "12.5, 25, 38, 50, 75, 100mm",
+            "ruptura": "1.620kgf",
+            "temperaturaTrabalho": "Contínuo: 280º - Controlado 400º"
+          }
+        ]
+      },
+      "images": [
+        "https://andtextil.com.br/assets/imagens/produtos/fita-aramida-filamento.png"
       ]
     }
   ]

@@ -12,6 +12,15 @@ export interface SpecificationTecido {
 	construcao: string
 }
 
+export interface SpecificationFio {
+	type: 'fio'
+	tex: number
+	resistenciaRuptura: string
+	alongamento: string
+	resistenciaTemperatura: string
+	metrosQuilo: string
+}
+
 export interface SpecificationFita {
 	type: 'fita'
 	espessura: string
@@ -23,6 +32,7 @@ export interface SpecificationFita {
 export type Specification =
 	| SpecificationFita
 	| SpecificationTecido
+	| SpecificationFio
 
 export interface Product {
 	id: number

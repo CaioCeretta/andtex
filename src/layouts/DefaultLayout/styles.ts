@@ -16,8 +16,9 @@ export const Main = styled.div`
 `
 
 export const ContentWrapper = styled.div`
-  width: 100rem;
-  
+  max-width: 100rem;
+  width: full;
   margin: 0 auto;
 `
+
 
