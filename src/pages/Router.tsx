@@ -1,4 +1,3 @@
-import { Home } from 'lucide-react'
 import { Route, Routes } from 'react-router-dom'
 
 import Categories from './Categorias/Categories'
@@ -7,13 +6,15 @@ import Product from './Product/Product'
 import Obrigado from './Obrigado'
 import Empresa from './(Principal)/Empresa'
 import { DefaultLayout } from '@/layouts/DefaultLayout'
+import Contato from './(Principal)/Contato'
+import Home from './(Principal)/Home'
 
 export function Router() {
 	return (
 		<Routes>
 			<Route path="/" element={<DefaultLayout />}>
 				<Route path="/" element={<Home />} />
-
+				<Route path="/contato" element={<Contato />} />
 				<Route path="/quem-somos" element={<Empresa />} />
 
 				<Route path="categorias" element={<Categories />} />

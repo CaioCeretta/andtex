@@ -1,6 +1,5 @@
 import { formatProductName } from '@/lib/utils'
 import type { Product } from '@/shared/interfaces'
-import React from 'react'
 
 interface ProductDescriptionProps {
 	product: Product

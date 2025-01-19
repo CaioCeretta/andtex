@@ -1,24 +1,19 @@
 import Navbar from '@/components/Header/Navbar/Navbar'
-import { Outlet } from 'react-router-dom'
-import {
-	ContentWrapper,
-	LayoutContainer,
-	Main,
-} from './styles'
 import Footer from '@/components/Rodape'
+import WhatsappButton from '@/components/WhatsappButon'
+import { Outlet } from 'react-router-dom'
 
 export function DefaultLayout() {
 	return (
-		<div className="flex flex-col min-h-screen">
-			<Navbar />
-			<LayoutContainer>
-				<Main>
-					<ContentWrapper>
-						<Outlet />
-					</ContentWrapper>
-				</Main>
-			</LayoutContainer>
-			<Footer />
+		<div className="flex flex-col h-screen">
+			<div className="flex-1 flex flex-col w-screen">
+				<Navbar />
+				<main className="flex-1 flex flex-col mx-10">
+					<Outlet />
+				</main>
+				<Footer />
+				<WhatsappButton />
+			</div>
 		</div>
 	)
 }

@@ -28,14 +28,14 @@ const ProductsByCategory = () => {
 			{products.map((product) => {
 				return (
 					<div key={product.id}>
-						<div className="flex justify-center items-center flex-row">
+						<div className="">
 							<Card className="w-full max-w-xs rounded-xl border">
-								<div className="flex flex-col gap-4 p-4">
-									<div className="aspect-square w-full h-[20rem] overflow-hidden rounded-xl">
+								<div className="flex flex-col items-center gap-4 p-4">
+									<div className="aspect-square h-[15rem] lg:h-[20rem] overflow-hidden rounded-xl flex items-center justify-center">
 										<img
 											src={product.images[0]}
 											alt={product.name || 'Product image'}
-											className="aspect-2/5 h-full object-cover border"
+											className="h-full object-cover"
 										/>
 									</div>
 									<div className="grid gap-1.5">

@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 
 import OrcamentoDialog from '@/components/Product/OrcamentoDialog'
 import ProductDescription from '@/components/Product/ProductDescription'
-import ProductTable from '@/components/Product/ProductTable'
+import ProductTable from '@/components/Product/Tabela/ProductTable'
 import productsJSON from '../../data/db/products.json'
 
 interface Category {
@@ -19,16 +19,32 @@ const Produto: React.FC = () => {
 	const [product, setProduct] = useState<Product | null>(
 		null
 	)
-	const [_, setCategoryName] = useState<string>('')
+	const [categoryName, setCategoryName] =
+		useState<string>('')
+	const [isLoading, setIsLoading] = useState<boolean>(true)
 
 	useEffect(() => {
 		const fetchProduct = async () => {
+			setIsLoading(true)
 			const products = productsJSON.products
 			const categories = productsJSON.categories
 
 			const productData = products.find(
 				(prod: Product) => prod.slug === productSlug
 			)
+
+			if (productData) {
+				setProduct(productData)
+				const category = categories.find(
+					(cat: Category) =>
+						cat.id === productData.categoryId
+				)
+				setCategoryName(
+					category
+						? category.name
+						: 'Categoria não encontrada'
+				)
+			}
 			setProduct(productData || null)
 
 			if (productData) {
@@ -40,10 +56,15 @@ const Produto: React.FC = () => {
 					category ? category.name : 'Unknown Category'
 				)
 			}
+			setIsLoading(false)
 		}
 
 		fetchProduct()
 	}, [productSlug])
+
+	if (isLoading) {
+		return <div>Carregando...</div>
+	}
 
 	if (!product) {
 		return <div>Loading...</div>
@@ -51,6 +72,9 @@ const Produto: React.FC = () => {
 
 	return (
 		<div className="lg:max-w-full w-full mx-auto pb-5">
+			<h1 className="text-2xl font-bold text-center my-4 hidden">
+				{categoryName}
+			</h1>
 			<div
 				className="my-3 mx-3 grid lg:grid-cols-2 grid-cols-1
 				lg:items-center mt-2 text-[14px]"

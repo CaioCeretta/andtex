@@ -19,6 +19,7 @@
       "name": "Linha para costura 100% aramida",
       "slug": "linha-costura-aramida",
       "categoryId": 1,
+      "subCategoryId": 0,
       "description": {
         "characteristics": [
           "Excelentes propriedades de isolação térmica",
@@ -55,7 +56,46 @@
         ]
       },
       "images": [
-        "https://andtextil.com.br/assets/imagens/produtos/linha-costura.png"
+        "https://andtextil.com.br/assets/imagens/produtos/linha-para-costura-aramida.jpg"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Fio de Fibra Aramida Cardada",
+      "slug": "fio-fibra-aramida-cardada",
+      "categoryId": 1,
+      "subCategoryId": 1,
+      "description": {
+        "characteristics": [
+          "Boa resistência mecânica",
+          "Boa resistência térmica",
+          "Excelente absorção",
+          "Boa resistência a tração",
+          "Não condutivo",
+          "Antichama"
+        ],
+        "applications": [
+          "Isolamento de fios e cabos",
+          "Fabricação de gaxetas e cordões",
+          "Fabricação de Fitas e Tecidos"
+        ],
+        "specifications": [
+          {
+            "tex": 600,
+            "resistenciaRuptura": "16.3kgf",
+            "filamento": "1mm",
+            "resistenciaTemperatura": "Constante 280º - Controlado 450º"
+          },
+          {
+            "tex": 1000,
+            "resistenciaRuptura": "32.6kgf",
+            "filamento": "1.5mm",
+            "resistenciaTemperatura": "Constante 280º - Controlado 450º"
+          }
+        ]
+      },
+      "images": [
+        "https://andtextil.com.br/assets/imagens/produtos/fio-cardado.png"
       ]
     },
     {
@@ -63,6 +103,7 @@
       "name": "Tecido de fibra de aramida filamento",
       "slug": "tecido-de-fibra-de-aramida-filamento",
       "categoryId": 2,
+      "subCategoryId": 0,
       "description": {
         "characteristics": [
           "Excelentes propriedades de isolação térmica",
@@ -98,8 +139,8 @@
         ]
       },
       "images": [
-        "https://i.ibb.co/480qctC/tecido-fibra-aramida-filamento.png",
-        "https://i.ibb.co/480qctC/tecido-fibra-aramida-filamento.png"
+        "https:andtextil.com.br/assets/imagens/produtos/tecido-fibra-aramida-filamento.png",
+        "https:andtextil.com.br/assets/imagens/produtos/tecido-fibra-aramida-filamento.png"
       ]
     },
     {
@@ -107,6 +148,7 @@
       "slug": "tecido-fibra-aramida-cardado",
       "name": "Tecido de Fibra Aramida Cardado",
       "categoryId": 2,
+      "subCategoryId": 0,
       "description": {
         "characteristics": [
           "Material isento de poliéster / algodão",
@@ -148,9 +190,52 @@
     },
     {
       "id": 4,
+      "slug": "tecido-fibra-vidro-texturizado",
+      "name": "Tecido de Fibra de Vidro Texturizado",
+      "categoryId": 2,
+      "subCategoryId": 1,
+      "description": {
+        "characteristics": [
+          "Totalmente isentas de amianto ou outras fibras orgânicas",
+          "Excelentes propriedades de isolação térmica",
+          "Excelente maleabilidade",
+          "Alta resistência à ruptura",
+          "Alta resistência ao corte",
+          "Compatibilidade com silicones, colas, tintas isolantes e resinas sintéticas em geral"
+        ],
+        "applications": [
+          "Cortinas de solda",
+          "Proteções térmicas removíveis",
+          "Juntas de expansão",
+          "Proteções térmicas para máquinas e equipamentos"
+        ],
+        "specifications": [
+          {
+            "largura": "1m",
+            "espessura": "1.5mm",
+            "gramatura": "1kg/m²",
+            "comprimento": "25m",
+            "temperaturaTrabalho": "Contínuo: 500º - Picos 550º"
+          },
+          {
+            "largura": "1m",
+            "espessura": "3.2mm",
+            "gramatura": "1.8kg/m²",
+            "comprimento": "25m",
+            "temperaturaTrabalho": "Contínuo: 500º - Picos 550º"
+          }
+        ]
+      },
+      "images": [
+        "https://andtextil.com.br/assets/imagens/produtos/tecido-fibra-de-vidro-texturizado.png"
+      ]
+    },
+    {
+      "id": 5,
       "slug": "fita-aramida-cem-porcento-filamento",
-      "name": "ita de Aramida 100% Filamento",
+      "name": "Fita de Aramida 100% Filamento",
       "categoryId": 3,
+      "subCategoryId": 0,
       "description": {
         "characteristics": [
           "Produzidas com fio 100% aramida filamento;",
@@ -193,10 +278,11 @@
       ]
     },
     {
-      "id": 5,
+      "id": 6,
       "slug": "fita-fibra-aramida-cardada",
-      "name": "Fita de fibra aramida cardada",
+      "name": "Fita de Fibra Aramida Cardada",
       "categoryId": 3,
+      "subCategoryId": 0,
       "description": {
         "characteristics": [
           "Excelente isolação elétrica",
@@ -230,9 +316,10 @@
       ]
     },
     {
-      "id": 6,
+      "id": 7,
       "slug": "fita-fibra-vidro-texturizada",
       "name": "Fita Fibra de Vidro Texturizada",
+      "subCategoryId": 0,
       "categoryId": 3,
       "description": {
         "characteristics": [

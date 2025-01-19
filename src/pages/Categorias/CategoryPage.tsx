@@ -47,7 +47,7 @@ export default function CategoryPage() {
 			<h1 className="mb-3 font-semibold text-2xl text-blue-text">
 				{capitalizeString(categoryName!)}
 			</h1>
-			<div className="flex gap-10">
+			<div className="flex flex-col flex-1 md:flex-row gap-10">
 				<ProductsByCategory />
 			</div>
 		</MaxWidthWrapper>

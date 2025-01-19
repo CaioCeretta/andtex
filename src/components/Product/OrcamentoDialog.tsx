@@ -1,9 +1,8 @@
-import React from 'react'
-import * as Dialog from '../ui/dialog'
-import { Button } from '../ui/button'
-import OrcamentoModal from '../OrcamentoModal'
 import { formatProductName } from '@/lib/utils'
 import type { Product } from '@/shared/interfaces'
+import OrcamentoModal from '../OrcamentoModal'
+import { Button } from '../ui/button'
+import * as Dialog from '../ui/dialog'
 
 export interface OrcamentoDialogProps {
 	product: Product

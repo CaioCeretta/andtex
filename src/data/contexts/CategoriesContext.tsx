@@ -36,8 +36,8 @@ export const CategoriesProvider = (props: any) => {
 		setCategories(data.categories)
 	}, [])
 
-	function selectCategory(categoryId: number): void {
-		setSelectedCategory(categoryId)
+	function selectCategory(categoryId: number | null): void {
+		return setSelectedCategory(categoryId)
 	}
 
 	const value = useMemo(

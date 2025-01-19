@@ -4,7 +4,6 @@ export interface Category {
 }
 
 export interface SpecificationTecido {
-	type: 'tecido'
 	espessura: string
 	gramatura: string
 	resistenciaRuptura: string
@@ -12,8 +11,15 @@ export interface SpecificationTecido {
 	construcao: string
 }
 
+export interface SpecificationTecidoAramida {
+	largura: string
+	espessura: string
+	gramatura: string
+	comprimento: string
+	temperaturaTrabalho: string
+}
+
 export interface SpecificationFio {
-	type: 'fio'
 	tex: number
 	resistenciaRuptura: string
 	alongamento: string
@@ -21,8 +27,14 @@ export interface SpecificationFio {
 	metrosQuilo: string
 }
 
+export interface SpecificationFioAramida {
+	tex: number
+	resistenciaRuptura: string
+	filamento: string
+	resistenciaTemperatura: string
+}
+
 export interface SpecificationFita {
-	type: 'fita'
 	espessura: string
 	largura: string
 	ruptura: string
@@ -32,7 +44,9 @@ export interface SpecificationFita {
 export type Specification =
 	| SpecificationFita
 	| SpecificationTecido
+	| SpecificationTecidoAramida
 	| SpecificationFio
+	| SpecificationFioAramida
 
 export interface Product {
 	id: number
@@ -44,6 +58,7 @@ export interface Product {
 		characteristics: string[]
 		specifications: Specification[]
 	}
+	subCategoryId?: number
 	categoryId: number
 	images: string[]
 }
